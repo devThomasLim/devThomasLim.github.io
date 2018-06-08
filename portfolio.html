@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title> Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/basicjs.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+</head>
+
+<body>
+<div class="menu-outer" id="menu">
+	<div class="leftmenu">
+		<div class="table">
+			<ul id="horizontal-list">				
+				<li class="menubutton">
+					<a href="index.html">Home</a>
+				</li><li class="menubutton">
+					<a href="CV.html">Curriculum Vitae</a>
+				</li><li class="menubutton active">
+					<a href="portfolio.html"> Portfolio</a>
+				</li>
+			</ul>
+		</div>
+	</div><div class="rightmenu">
+		<div class="table">
+			<ul id="horizontal-list">						
+				<li>
+					<a class="domain">Sugianto</a>
+				</li>			
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="header">
+		<!-- to take up menu fixed space -->
+	</div>
+	<div class="contentholder">
+		<div id="portMainContent">
+			<div id="portContent">
+				<div class="title"> PORTFOLIO </div>
+				<div class="flexContainer wildcardWebsite" id="wildcardWebsite">
+					<div class="subTitle">
+						Wildcard Website
+					</div>
+					<div class="imgContainer"  id="wildcardWrapper">
+						<div  id="wildcardContainer">
+						<script>							
+							function portfolioPhoto(list, identifier) {
+								var links = list;
+								var linksLen = list.length;
+								var identifier = identifier;
+								var i;
+								for (i = 0; i < linksLen; i++) {
+									var link = '';                                                           
+									if (links[i].includes("dl=0") == true) {
+										link = links[i].replace("dl=0", "raw=1");
+										fileName = takeName(link);
+										document.write('<div class="imgDiv" id="imgDiv'+identifier+i+'"><img class="projectImg" id="portImg'+identifier+i+'" onLoad="showModal(this.id)" alt="'+fileName+'" src="'+link+'" > <div class="bottomCaption"><div class="text">'+fileName+'</div></div></div>');
+									} else {
+										fileName = takeName(links[i]);
+										document.write('<div class="imgDiv" id="imgDiv'+identifier+i+'"><img class="projectImg" id="portImg'+identifier+i+'" onLoad="showModal(this.id)" alt="'+fileName+'" src="'+links[i]+'" > <div class="bottomCaption"><div class="text">'+fileName+'</div></div></div>');
+									}
+								}                 
+							}
+				
+							function takeName (str) {
+								var name = '';
+								name = str.split('_')[1]; 
+								name = name.replace(/%20/g, ' ');
+								name = name.split('.')[0];
+								return name;
+							}
+
+							var wildcardContainer = [];
+							wildcardContainer.push('https://www.dropbox.com/s/x10tsvqrxi2g4o4/001_Login%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/39mnnkrqfpv810h/002_Home%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/nxoq9pnjtf9crmp/003_Cart.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/0z80i2wowjito0k/004_Enquiry.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/zpyvatc005n9851/005_User%20Package.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/n8vo7pfyf0kogs7/006_Admin%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/lmrncmxksq6cqlr/007_Add%20Product%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/xx6ij6neahaulj9/008_Edit%20Package%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/brpqruiqljglqzj/009_Edit%20Delivery%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/iwvbc10v6brx5w9/010_Edit%20Resi%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/5mxu81tlz2g23cu/011_Message%20to%20User%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/qv0hsv4ucw80yws/012_Announcement%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/gdqsdkok01fgp1f/013_Confirm%20Payment%20Page.png?dl=0');
+							wildcardContainer.push('https://www.dropbox.com/s/pnxu1o1nmm71kg2/014_Delivery%20View%20Page.png?dl=0');	
+							wildcardContainer.push('https://www.dropbox.com/s/rv3qhgynf0f147q/015_Cart%20History%20Page.png?dl=0');	
+							wildcardContainer.push('https://www.dropbox.com/s/v4oloch8w3j6l8x/016_Report%20View%20Page.png?dl=0');	
+							wildcardContainer.push('https://www.dropbox.com/s/w80fe828q69ma21/017_Print%20Report%20Page.png?dl=0');	
+							
+							portfolioPhoto(wildcardContainer, 'wildcard');							
+						
+						</script>
+						</div>
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+							<!-- The Close Button -->
+							<span class="close">&times;</span>
+
+							<!-- Modal Content (The Image) -->
+							<img class="modal-content" id="img01">
+
+							<!-- Modal Caption (Image Text) -->
+							<div id="caption"></div>
+						</div>											
+					</div>
+					<div class="descriptionText">
+						Thiw Website was created using HTML, CSS, Python, Django, and javascript, 
+						it is an online shop that sells accessories, 
+						it has user database and authorization, product database, stock database, cart, user purchase history and so on.
+						This was the school project that i created to fulfill the requirement before taking essay.
+					</div>
+				</div>
+				
+				<!-- seperator -->
+				<div class="seperator"></div>
+
+				<div class="flexContainer twitterAnalysis" id="twitterAnalysis">
+					<div class="subTitle">
+						Twitter Analysis
+					</div>
+					<div class="imgContainer">
+						<script>
+							var twitterContainer = [];
+							
+							twitterContainer.push('https://www.dropbox.com/s/vjohz6k05eq4rr0/001_Home%20Page.png?dl=0');
+							twitterContainer.push('https://www.dropbox.com/s/2pggcgmszvlvkky/002_Get%20Tweet%20Page.png?dl=0');
+							twitterContainer.push('https://www.dropbox.com/s/d0p8t36mrohjzzz/003_Analyze%20Page.png?dl=0');
+							twitterContainer.push('https://www.dropbox.com/s/9qiz8svr7lzvh74/004_Add%20Positive%20Data%20Training.png?dl=0');
+							twitterContainer.push('https://www.dropbox.com/s/iipjhspf746zzbh/005_Add%20Neutral%20Data%20Training.png?dl=0');
+							twitterContainer.push('https://www.dropbox.com/s/z1wi6czpgo5ibon/006_Add%20Negative%20Data%20Training.png?dl=0');
+							twitterContainer.push('https://www.dropbox.com/s/x6evk7sxoz6vi3t/007_Monthly%20Report.png?dl=0');
+								
+							portfolioPhoto(twitterContainer, 'twitter');
+
+						</script>>
+						<div id="slider"></div>
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+							<!-- The Close Button -->
+							<span class="close">&times;</span>
+
+							<!-- Modal Content (The Image) -->
+							<img class="modal-content" id="img01">
+
+							<!-- Modal Caption (Image Text) -->
+							<div id="caption"></div>
+						</div>											
+					</div>
+					<div class="descriptionText">
+						The full project name is Sentiment Analysis Data Mining Applixation on Twitter with Naive Bayes Method on Indomie Products, 
+						This application was created using Python langauge with Kivy interface and Tweepy API to get data from Twitter, 
+						This application takes post from Twitter that has a keyword of Indomie/Indomi, 
+						Data that was acquired are analyze live when the data came in, after being analyzed with Naive Bayes Method that I implenent into python script,
+						the result is save in local database and are displayed as seen from the pictures above.
+						<br/>
+						<br/>
+						This application was created as the final essay to finish my bachelor's degree.
+					</div>					
+				</div>
+
+				<!-- seperator -->
+				<div class="seperator"></div>
+
+				<div class="flexContainer fromLeft sugiantoWebsite" id="sugiantoWebsite">
+					<div class="subTitle">
+						Sugianto's Website
+					</div>
+					<div class="imgContainer">
+						<script>
+							var sugiContainer = [];
+							sugiContainer.push('https://www.dropbox.com/s/ivdiqyaiceb5kvc/001_Home%20Page.png?dl=0');
+							sugiContainer.push('https://www.dropbox.com/s/kivzekfwyhk9ijk/002_Curriculum%20Vitae%20Page.png?dl=0');
+							sugiContainer.push('https://www.dropbox.com/s/jj43veapcvx906w/003_Portfolio%20Page.png?dl=0');
+														
+							portfolioPhoto(sugiContainer, 'Sugi');
+						</script>
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+							<!-- The Close Button -->
+							<span class="close">&times;</span>
+
+							<!-- Modal Content (The Image) -->
+							<img class="modal-content" id="img01">
+
+							<!-- Modal Caption (Image Text) -->
+							<div id="caption"></div>
+						</div>
+					</div>
+					<div class="descriptionText">
+						This website was made with HTML, CSS, PHP and Javascript, 
+						it is build for the purpose of an online Curriculum Vitae and portfolio, 
+						and also as an exercise in learning PHP/Laravel since I am more familiar with Python/Django.
+						<br/>
+						<br/>
+						This website was built from scratch by me with a little help of snippet codes from w3school and StackOverflow. 
+						<br/>
+						<br/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+	
+	<div class='pageBottom'>
+		<div class='pageBottomTitle'>
+			Contact Information
+		</div>
+		<div class="contactCont">
+			<div class="contactCont1">
+				<div class="margin10">
+					<table>                    
+						<tr>
+							<td> Email</td>
+							<td> : </td>
+							<td> imsooki11@gmail.com</td>
+						</tr>
+						<tr>
+							<td> Mobile Phone</td>
+							<td> : </td>
+							<td> +62 852 6543 6767</td>
+						</tr>
+						<tr>
+							<td> Whatsapp</td>
+							<td> : </td>
+							<td> +62 852 6543 6767</td>
+						</tr>
+					</table>
+				</div>
+			</div><div class="contactCont2">
+				<div class="margin10">
+					<div class="iconDiv" align="center">
+						<div class="iconContainer">
+							<a href="https://www.facebook.com/ViryaGirinanda"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" class="contactIcon"></a>
+						</div>
+						<div class="iconContainer">
+							<a href="https://www.instagram.com/sugiantoimsooki/"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="contactIcon"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var widget1 = '.wildcardWebsite';
+		var widget2 = '.twitterAnalysis';
+		var widget3 = '.sugiantoWebsite';
+		$(document).ready(function() {
+			$(widget1 +","+ widget2 +","+ widget3).css('position', 'relative');
+
+			$(widget1).css('left', '-1400px');
+			$(widget2).css('right', '-1400px');
+
+			$(widget1).animate({left : '0px'}, 3000);
+			$(widget2).animate({right : '0px'}, 3000);
+		});
+
+		// $(function() {
+		// 	$(window).scroll(function() {
+		// 	var scroll = $(window).scrollTop();
+		// 	$(widget3).hide();
+		// 	if (scroll >= 550) {				
+		// 		$(widget3).css('position', 'relative');
+		// 		$(widget3).css('left', '-1400px');						
+		// 		$(widget3).show();
+		// 		$(widget3).animate({left : '0px'}, 3000);
+		// 	} else {
+		// 		$(widget3).attr('style', '');
+		// 		$(widget3).css('position', 'relative');
+		// 		$(widget3).css('left', '1400px');
+		// 		$(widget3).hide();
+		// 	}
+		// 	});
+		// })
+		
+		window.addEventListener('scroll', checkPosition);
+
+		function checkPosition() {
+			var y = $(document).scrollTop();
+			var windowHeight = $(window).height();
+			var pageHeight = $(document).height();
+			var position = (y + windowHeight) / pageHeight;
+			if (position >= 0.98) {
+				$(widget3).slideDown(1000);
+				$(widget3).removeClass('fromLeft', 3000).addClass('toRight');				
+			} else if (position < 0.71) {				
+				$(widget3).removeClass('toRight').addClass('fromLeft', 3000);
+				$(widget3).slideUp(1000);
+			} else {
+				//do nothing
+			}
+		}
+	</script>
+</body>
+</html> 

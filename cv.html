@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title> Curriculum Vitae</title>
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/basicjs.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+<div class="menu-outer" id="menu">
+	<div class="leftmenu">
+		<div class="table">
+			<ul id="horizontal-list">				
+				<li class="menubutton">
+					<a href="index.html">Home</a>
+				</li><li class="menubutton active">
+					<a href="CV.html">Curriculum Vitae</a>
+				</li><li class="menubutton">
+					<a href="portfolio.html"> Portfolio</a>
+				</li>
+			</ul>
+		</div>
+	</div><div class="rightmenu">
+		<div class="table">
+			<ul id="horizontal-list">						
+				<li>
+					<a class="domain">Sugianto</a>
+				</li>			
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="header">
+		<!-- to take up menu fixed space -->
+	</div>
+
+		<div class="contentholder" id="contentHolder">
+			<div class="sidebyside">
+				<div class="flex">
+					<div class="sidebyside60" id="widget1">
+						<div class="innerpadding">						
+							<div class="title">
+								BIODATA
+							</div>
+							<div class="tableContainer1">
+								<div class="tableContainer2">		
+									<table class="myTable">
+										<tr>
+											<td rowspan='100' width='35%' align="center">
+												<div class="container">				
+													<img class="biodata" id="myImage" onload="intervalImage()" alt="Sugianto, S.Kom." src="https://www.dropbox.com/s/xmnrkr7h2izoroq/IMG_0937.JPG?raw=1">
+													<div class="middle">
+														<div class="text">Sugianto, S.Kom.</div>
+													</div>
+												</div>
+												
+												<!-- The Modal -->
+												<div id="myModal" class="modal">
+												
+													<!-- The Close Button -->
+													<span class="close">&times;</span>
+												
+													<!-- Modal Content (The Image) -->
+													<img class="modal-content" id="img01">
+												
+													<!-- Modal Caption (Image Text) -->
+													<div id="caption"></div>
+												</div>
+												<script type="text/javascript">
+													// Get the modal
+													var modal = document.getElementById('myModal');
+												
+													// Get the image and insert it inside the modal - use its "alt" text as a caption
+													var img = document.getElementById('myImage');
+													var modalImg = document.getElementById("img01");
+													var captionText = document.getElementById("caption");
+													img.onclick = function(){
+														modal.style.display = "block";
+														modalImg.src = this.src;
+														captionText.innerHTML = this.alt;
+													}
+												
+													// Get the <span> element that closes the modal
+													var span = document.getElementsByClassName("close")[0];
+												
+													// When the user clicks on <span> (x), close the modal
+													span.onclick = function() {
+													modal.style.display = "none";
+													} 
+												</script>
+											</td>										
+										</tr>
+											<script>
+												var biodata = [];
+												biodata.push('Name_Sugianto, S.Kom.');
+												biodata.push('Gender_Male');
+												biodata.push('Place of Birth_Tanjungpinang');
+												biodata.push('Date of Birth_6th September 1993');
+												biodata.push('Nationality_Indonesian');
+												biodata.push('Religion_Buddhist');
+												biodata.push('Marital Status_Not Married / Single');
+												biodata.push('Address_Jl. Temiang No 48, Tanjungpinang');
+												biodata.push('Height_173 cm');
+												biodata.push('Weight_69 Kg');
+												biodata.push('Email_imsooki11@gmail.com');
+												biodata.push('Phone_0852 6543 6767');
+												
+												var biodataLen = biodata.length;
+												var i = 0;
+												for (i ; i < biodataLen; i++ ) {
+													var title = biodata[i].split('_')[0];
+													var detail =  biodata[i].split('_')[1];
+													if (i == 0) {
+														document.write("<tr class='oddRow'><td width='20%'>" + title + "</td><td>" + detail  + "</td></tr><tr class='evenRow'>");
+													}
+													else if (i % 2 == 0) {
+														if (i == biodataLen){
+															document.write("<td width='20%'>" + title + "</td><td>" + detail  + "</td></tr>");
+														} else {
+															document.write("<td width='20%'>" + title + "</td><td>" + detail  + "</td></tr><tr class='evenRow'>");
+														}                
+													} else if (i == biodataLen) {
+														document.write("<td width='20%'>" + title + "</td><td>" + detail  + "</td></tr>");
+													} else {
+														document.write("<td width='20%'>" + title + "</td><td>" + detail  + "</td></tr><tr class='oddRow'>");
+													}
+												}
+											</script>
+									</table>
+
+									<div class="margin10">
+										<div class="iconDiv" align="center">
+											<div class="iconContainer">
+												<a href="https://www.facebook.com/ViryaGirinanda"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" class="contactIcon"></a>
+											</div>
+											<div class="iconContainer">
+												<a href="https://www.instagram.com/sugiantoimsooki/"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="contactIcon"></a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div><div class="sidebyside40" id="widget2">
+						<div class="innerpadding">
+							<div class="">
+								<div class="title">
+									EDUCATION
+								</div>
+								<div class="tableContainer1">
+									<div class="tableContainer2">
+										<div class="rowContainer">
+											<div class="flex">
+											<div class="eduRowSpanLeft">
+												1998 - 1999
+											</div><div class="eduRowSpanRight">
+												KINDERGARTEN
+											</div></div><div class="beloweduRowSpan">
+												TK Mawar Tanjungpinang
+											</div>
+										</div>
+										<div class="rowContainer">
+											<div class="flex">
+											<div class="eduRowSpanLeft">
+												1999 - 2006
+											</div><div class="eduRowSpanRight">
+												PRIMARY SCHOOL
+											</div></div><div class="beloweduRowSpan">
+												SD Negeri 001 Tanjungpinang
+											</div>
+										</div>
+										<div class="rowContainer">
+											<div class="flex">
+											<div class="eduRowSpanLeft">
+												2006 - 2009
+											</div><div class="eduRowSpanRight">
+												JUNIOR HIGH SCHOOL
+											</div></div><div class="beloweduRowSpan">
+												SMP BINTAN Tanjungpinang
+											</div>
+										</div>
+										<div class="rowContainer">
+											<div class="flex">
+											<div class="eduRowSpanLeft">
+												2009 - 2012
+											</div><div class="eduRowSpanRight">
+												VOCATIONAL HIGH SCHOOL
+											</div></div><div class="beloweduRowSpan">
+												SMK Negeri 1 Tanjungpinang
+											</div>
+										</div>
+										<div class="rowContainer">
+											<div class="flex">
+											<div class="eduRowSpanLeft">
+												2014 - 2018
+											</div><div class="eduRowSpanRight">
+												IT COLLEGE
+											</div></div><div class="beloweduRowSpan">
+												Sekolah Tinggi Teknologi Tanjungpinang
+											</div>
+										</div>									
+												
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="innerpadding05" id="widget3">				
+					<div class="title">
+						CAPABILITIES
+					</div>
+					<div class="tableContainer1">
+						<div class="tableContainer2">
+							<div id="capabilities" class="rowContainer">
+								<div class="capContainer">
+									<table>
+										<tr class="capRowTitle">
+											<td colspan="3"> <h1> COMPUTER  </h1> </td>						
+										</tr>
+										<tr class="capRow">
+											<td class="firstColumn" rowspan="4"> WEB DEVELOPMENT </td>
+											<td class="secondtColumn"> Python + Django </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 75%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">	
+											<td class="secondColumn"> HTML + CSS  </td>
+											<td class="thirdColumn"> 
+												<div class="progressBar">
+													<div class="progress" style="width: 70%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondColumn"> Netbean + Java </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 60%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">	
+											<td class="secondColumn"> PHP + Laravel </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 40%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="firstColumn" rowspan="1"> DESKTOP DEVELOPMENT </td>
+											<td class="secondtColumn"> Python + TkInter / Kivy </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 75%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="firstColumn" rowspan="4"> DATABASE </td>
+											<td class="secondtColumn"> PosgreSQL </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 70%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondtColumn"> MySQL </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 65%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondtColumn"> Excel </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 50%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondtColumn"> Access </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 50%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="firstColumn" rowspan="3"> VIDEO EDITING </td>
+											<td class="secondtColumn"> Davinci Resolve </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 60%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondtColumn"> Sony Vegas Pro </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 55%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondtColumn"> Adobe Premiere </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 55%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="firstColumn" rowspan="3"> PHOTO EDITING </td>
+											<td class="secondtColumn"> Adobe Illustrator </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 60%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondtColumn"> Adobe Photoshop </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 60%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="capRow">
+											<td class="secondtColumn"> GIMP </td>
+											<td class="thirdColumn">
+												<div class="progressBar">
+													<div class="progress" style="width: 60%;">
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='pageBottom'>
+			<div class='pageBottomTitle'>
+				Contact Information
+			</div>
+			<div class="contactCont">
+				<div class="contactCont1">
+					<div class="margin10">
+						<table>                    
+							<tr>
+								<td> Email</td>
+								<td> : </td>
+								<td> imsooki11@gmail.com</td>
+							</tr>
+							<tr>
+								<td> Mobile Phone</td>
+								<td> : </td>
+								<td> +62 852 6543 6767</td>
+							</tr>
+							<tr>
+								<td> Whatsapp</td>
+								<td> : </td>
+								<td> +62 852 6543 6767</td>
+							</tr>
+						</table>
+					</div>
+				</div><div class="contactCont2">
+					<div class="margin10">
+						<div class="iconDiv" align="center">
+							<div class="iconContainer">
+								<a href="https://www.facebook.com/ViryaGirinanda"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" class="contactIcon"></a>
+							</div>
+							<div class="iconContainer">
+								<a href="https://www.instagram.com/sugiantoimsooki/"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="contactIcon"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$('#widget1, #widget2, #widget3').css('position', 'relative');
+				$('#widget1').css('left', '-700px');
+				$('#widget3').css('left', '-1400px')
+				$('#widget2').css('right', '-700px');
+				$('#widget1, #widget3').animate({left: '0px'}, 2000);
+				$('#widget2').animate({right: '0px'}, 2000);
+			});
+		</script>
+</body>
+</html> 
