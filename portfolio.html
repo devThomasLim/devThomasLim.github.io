@@ -279,11 +279,11 @@
 			var windowHeight = $(window).height();
 			var pageHeight = $(document).height();
 			var position = (y + windowHeight) / pageHeight;
-			if (position >= 0.7) {
+			if (position > 0.8) {
 				$(widget3).slideDown(1000);
-				$(widget3).removeClass('fromLeft', 3000).addClass('toRight');				
-			} else if (position < 0.4) {	
-				$(widget3).removeClass('toRight').addClass('fromLeft', 3000);
+				$(widget3).removeClass('fromLeft', 3000);			
+			} else if (position < 0.65) {	
+				$(widget3).addClass('fromLeft', 3000);
 				$(widget3).slideUp(1000);
 			} else {
 				//do nothing
