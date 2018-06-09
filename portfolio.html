@@ -116,7 +116,7 @@
 						</div>											
 					</div>
 					<div class="descriptionText">
-						Thiw Website was created using HTML, CSS, Python, Django, and javascript, 
+						This Website was created using HTML, CSS, Python, Django, and Javascript, 
 						it is an online shop that sells accessories, 
 						it has user database and authorization, product database, stock database, cart, user purchase history and so on.
 						This was the school project that i created to fulfill the requirement before taking essay.
@@ -161,7 +161,7 @@
 						</div>											
 					</div>
 					<div class="descriptionText">
-						The full project name is Sentiment Analysis Data Mining Applixation on Twitter with Naive Bayes Method on Indomie Products, 
+						The full project name is Sentiment Analysis Data Mining Application on Twitter with Naive Bayes Method on Indomie Products, 
 						This application was created using Python langauge with Kivy interface and Tweepy API to get data from Twitter, 
 						This application takes post from Twitter that has a keyword of Indomie/Indomi, 
 						Data that was acquired are analyze live when the data came in, after being analyzed with Naive Bayes Method that I implenent into python script,
@@ -271,28 +271,23 @@
 			$(widget2).animate({right : '0px'}, 3000);
 		});
 
-		// $(function() {
-		// 	$(window).scroll(function() {
-		// 	var scroll = $(window).scrollTop();
-		// 	$(widget3).hide();
-		// 	if (scroll >= 550) {				
-		// 		$(widget3).css('position', 'relative');
-		// 		$(widget3).css('left', '-1400px');						
-		// 		$(widget3).show();
-		// 		$(widget3).animate({left : '0px'}, 3000);
-		// 	} else {
-		// 		$(widget3).attr('style', '');
-		// 		$(widget3).css('position', 'relative');
-		// 		$(widget3).css('left', '1400px');
-		// 		$(widget3).hide();
-		// 	}
-		// 	});
-		// })
 		window.addEventListener('touchmove', checkPositionMobile);
 		window.addEventListener('scroll', checkPosition);
 			
 		function checkPositionMobile() {
-			$(widget3).removeClass('fromLeft', 3000).addClass('toRight');
+			var y = $(document).scrollTop();
+			var windowHeight = $(window).height();
+			var pageHeight = $(document).height();
+			var position = (y + windowHeight) / pageHeight;
+			if (position >= 0.7) {
+				$(widget3).slideDown(1000);
+				$(widget3).removeClass('fromLeft', 3000).addClass('toRight');				
+			} else if (position < 0.4) {	
+				$(widget3).removeClass('toRight').addClass('fromLeft', 3000);
+				$(widget3).slideUp(1000);
+			} else {
+				//do nothing
+			}
 		}
 
 		function checkPosition() {
