@@ -288,8 +288,16 @@
 		// 	}
 		// 	});
 		// })
-		$(document.body).on('touchmove', checkPosition);
+		$(document.body).on('touchmove', onScroll);
 		$(document.body).on('scroll', checkPosition);
+		
+		function onScroll(){ 
+			if( $(window).scrollTop() + window.innerHeight >= document.body.scrollHeight ) { 
+				track_page++; 
+				load_contents(track_page);
+				alert('scrolled');
+			}
+		}
 
 		function checkPosition() {
 			var y = $(document).scrollTop();
