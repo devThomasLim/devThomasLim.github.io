@@ -288,16 +288,8 @@
 		// 	}
 		// 	});
 		// })
-		$(document.body).on('touchmove', onScroll);
-		$(document.body).on('scroll', checkPosition);
-		
-		function onScroll(){ 
-			if( $(window).scrollTop() + window.innerHeight >= document.body.scrollHeight ) { 
-				track_page++; 
-				load_contents(track_page);
-				alert('scrolled');
-			}
-		}
+		window.addEventListener('touchmove', checkPosition);
+		window.addEventListener('scroll', checkPosition);
 
 		function checkPosition() {
 			var y = $(document).scrollTop();
