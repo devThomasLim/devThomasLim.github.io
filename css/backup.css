@@ -1,80 +1,78 @@
 :root {
     /* start menu */
     --linkNormal-bg-color: #ececec;
-    --linkNormal-txt-color: #233341;
+    --linkNormal-txt-color: #08447A;
     --linkVisited-bg-color: #ececec;
     --linkVisited-txt-color: rgb(11, 127, 228);
-    --linkHover-bg-color: #233341;
+    --linkHover-bg-color: #08447A;
     --linkHover-txt-color: #ececec;
-    --linkActive-bg-color: #5A7D9A;
-    --linkActive-txt-color: #233341;
+    --linkActive-bg-color: #68A5BA;
+    --linkActive-txt-color: #08447A;
 
-    --menubody1-bg-color: #233341; /* Menu backgound Color */
-    --menubody2-bg-color: #5A7D9A; /* Menu backgound Color */
+    --menubody1-bg-color: #08447A; /* Menu backgound Color */
+    --menubody2-bg-color: #68A5BA; /* Menu backgound Color */
     --menubody-txt-color: #ececec; /* Menu text Color */
 
-    --menuactive-bg-color: #78859C; /* Menu active Color */
+    --menuactive-bg-color: #6E98BE; /* Menu active Color */
     --menuactive-txt-color: #ffffff; /* Menu active Color */
 
-    --menuhover-bg-color: #5A7D9A; /* Menu hover Color */
+    --menuhover-bg-color: hsl(35, 100%, 77%); /* Menu hover Color */
     --menuhover-txt-color: #26201E; /* Menu hover text Color */  
     /* end menu */
 
-    --body-bg-color:#ABAFB7;
+    --body-bg-color:#C9DAEA;
     --body-txt-color:#141A18;
 
-    --title1-bg-color : #013F4D;
-    --title2-bg-color : #02576B;
+    --title1-bg-color : #2E7B94;
+    --title2-bg-color : #045975;
     --title-txt-color : rgb(214, 214, 214);
 
     --content-bg-color : #ececec;
     --content-txt-color : #26201E;
 
-    --subcontent-bg-color : #5A7D9A;
+    --subcontent-bg-color : #68A5BA;
     --subcontent-txt-color : #26201E;
 
     /* start biodata */
-    --evenRow-bg-color : #B9BEC8;
+    --evenRow-bg-color : #C7E0E8;
     --evenRow-txt-color : #26201E;
 
-    --oddRow-bg-color : #ABAFB7;
+    --oddRow-bg-color : #CBD6EB;
     --oddRow-txt-color : #26201E;
     /* end biodata */
 
     /* start education */
-    --eduRowSpanLeft-bg-color : #B9BEC8;
+    --eduRowSpanLeft-bg-color : #C7E0E8;
     --eduRowSpanLeft-txt-color : #26201E;
 
-    --eduRowSpanRight-bg-color : #B9BEC8;
+    --eduRowSpanRight-bg-color : #C7E0E8;
     --eduRowSpanRight-txt-color : #26201E;
 
-    --beloweduRowSpan-bg-color : #B9BEC8;
+    --beloweduRowSpan-bg-color : #C7E0E8;
     --beloweduRowSpan-txt-color : #26201E;
     /* end education */
 
     /* start capabilities */
-    --capRowTitle-bg-color : #B9BEC8;
+    --capRowTitle-bg-color : #C7E0E8;
     --capRowTitle-txt-color : #26201E;
 
-    --capRow-bg-color : #B9BEC8;
+    --capRow-bg-color : #C7E0E8;
     --capRow-txt-color : #26201E;
 
     --progressBar1-bg-color : #26201E;
-    --progressBar2-bg-color : #013F4D;
+    --progressBar2-bg-color : #2E7B94;
     /* end capabilities */
 
     /* start portfolio */
-    --subTitle1-bg-color : #013F4D;
-    --subTitle2-bg-color : #013F4D;
-    --subTitle-txt-color : #B9BEC8;
+    --subTitle1-bg-color : #2E7B94;
+    --subTitle2-bg-color : #2E7B94;
+    --subTitle-txt-color : #C7E0E8;
     /* end portfolio */
 
     /* start pageBottom */   
-    --pageBottomTitle1-bg-color : #ABAFB7;
-    --pageBottomTitle2-bg-color : #ABAFB7;
+    --pageBottomTitle1-bg-color : #C7E0E8;
+    --pageBottomTitle2-bg-color : #C7E0E8;
     --pageBottomTitle-txt-color : #045975;
-
-    --bottomIconDiv-bg-color : #ABAFB7;
     /* end pageBottom */
 }
 a {
@@ -82,12 +80,12 @@ a {
     text-decoration: none;
 }
 .btn {
-    background: #ABAFB7;
-    background-image: -webkit-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: -moz-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: -ms-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: -o-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: linear-gradient(to bottom, #ABAFB7, #5A7D9A);
+    background: #C9DAEA;
+    background-image: -webkit-linear-gradient(top, #C9DAEA, #68A5BA);
+    background-image: -moz-linear-gradient(top, #C9DAEA, #68A5BA);
+    background-image: -ms-linear-gradient(top, #C9DAEA, #68A5BA);
+    background-image: -o-linear-gradient(top, #C9DAEA, #68A5BA);
+    background-image: linear-gradient(to bottom, #C9DAEA, #68A5BA);
     -webkit-border-radius: 15;
     -moz-border-radius: 15;
     border-radius: 15px;
@@ -99,12 +97,12 @@ a {
     text-decoration: none;
   }  
   .btn:hover {
-    background: #B9BEC8;
-    background-image: -webkit-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: -moz-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: -ms-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: -o-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: linear-gradient(to bottom, #B9BEC8, #3498db);
+    background: #C7E0E8;
+    background-image: -webkit-linear-gradient(top, #C7E0E8, #3498db);
+    background-image: -moz-linear-gradient(top, #C7E0E8, #3498db);
+    background-image: -ms-linear-gradient(top, #C7E0E8, #3498db);
+    background-image: -o-linear-gradient(top, #C7E0E8, #3498db);
+    background-image: linear-gradient(to bottom, #C7E0E8, #3498db);
     text-decoration: none;
   }
 .links:link {
@@ -606,9 +604,6 @@ ul#horizontal-list li {
 }
 .margin10 {
     margin: 10px;
-}
-.bottomIconDiv{
-    background-color: var(--bottomIconDiv-bg-color);    
 }
 /* end pagebottom */
 
