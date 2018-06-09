@@ -288,8 +288,13 @@
 		// 	}
 		// 	});
 		// })
-		window.addEventListener('touchmove', checkPosition);
+		window.addEventListener('touchmove', checkPositionMobile);
 		window.addEventListener('scroll', checkPosition);
+			
+		function checkPositionMobile() {
+			$(widget3).removeClass('fromLeft', 3000).addClass('toRight');
+			alert('moved');
+		}
 
 		function checkPosition() {
 			var y = $(document).scrollTop();
