@@ -289,7 +289,7 @@
 		// 	});
 		// })
 		$(document.body).on('touchmove', checkPosition);
-		window.addEventListener('scroll', checkPosition);
+		$(document.body).on('scroll', checkPosition);
 
 		function checkPosition() {
 			var y = $(document).scrollTop();
