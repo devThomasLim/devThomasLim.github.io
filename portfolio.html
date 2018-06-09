@@ -292,8 +292,12 @@
 		window.addEventListener('scroll', checkPosition);
 			
 		function checkPositionMobile() {
+			var y = $(document).scrollTop();
+			var windowHeight = $(window).height();
+			var pageHeight = $(document).height();
+			var position = (y + windowHeight) / pageHeight;
 			$(widget3).removeClass('fromLeft', 3000).addClass('toRight');
-			alert('moved');
+			console.log('page : ' +y+ 'window height : '+ windowHeight + pageheihgt+'position' +position);
 		}
 
 		function checkPosition() {
