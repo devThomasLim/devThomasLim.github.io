@@ -1,80 +1,87 @@
 :root {
     /* start menu */
     --linkNormal-bg-color: #ececec;
-    --linkNormal-txt-color: #233341;
+    --linkNormal-txt-color: #3B770D;
     --linkVisited-bg-color: #ececec;
-    --linkVisited-txt-color: rgb(11, 127, 228);
-    --linkHover-bg-color: #233341;
+    --linkVisited-txt-color: #568930;
+    --linkHover-bg-color: #8FB374;
     --linkHover-txt-color: #ececec;
-    --linkActive-bg-color: #5A7D9A;
-    --linkActive-txt-color: #233341;
+    --linkActive-bg-color: #8FB374;
+    --linkActive-txt-color: #3B770D;
 
-    --menubody1-bg-color: #233341; /* Menu backgound Color */
-    --menubody2-bg-color: #5A7D9A; /* Menu backgound Color */
+    --menubody1-bg-color: #183600; /* Menu backgound Color */
+    --menubody2-bg-color: #568930; /* Menu backgound Color */
     --menubody-txt-color: #ececec; /* Menu text Color */
 
-    --menuactive-bg-color: #78859C; /* Menu active Color */
+    --menuactive-bg-color: #75B345; /* Menu active Color */
     --menuactive-txt-color: #ffffff; /* Menu active Color */
 
-    --menuhover-bg-color: #5A7D9A; /* Menu hover Color */
+    --menuhover-bg-color: #B8BCBA; /* Menu hover Color */
     --menuhover-txt-color: #26201E; /* Menu hover text Color */  
     /* end menu */
 
-    --body-bg-color:#ABAFB7;
+    --body-bg-color:#E1E3DF;
     --body-txt-color:#141A18;
 
-    --title1-bg-color : #013F4D;
-    --title2-bg-color : #02576B;
+    --title1-bg-color : #0B5F30;
+    --title2-bg-color : #265800;
     --title-txt-color : rgb(214, 214, 214);
 
     --content-bg-color : #ececec;
     --content-txt-color : #26201E;
 
-    --subcontent-bg-color : #5A7D9A;
+    --subcontent-bg-color : #B8BCBA;
     --subcontent-txt-color : #26201E;
 
+    /* start modal */
+    --pictureTitle-bg-color: #8FB374;
+    --pictureTitle-txt-color: #26201E;
+    /* end modal*/
+
     /* start biodata */
-    --evenRow-bg-color : #B9BEC8;
+    --evenRow-bg-color : #F1F3EE;
     --evenRow-txt-color : #26201E;
 
-    --oddRow-bg-color : #ABAFB7;
+    --oddRow-bg-color : #E1E3DF;
     --oddRow-txt-color : #26201E;
     /* end biodata */
 
     /* start education */
-    --eduRowSpanLeft-bg-color : #B9BEC8;
+    --eduRowSpanLeft-bg-color : #E1E3DF;
     --eduRowSpanLeft-txt-color : #26201E;
 
-    --eduRowSpanRight-bg-color : #B9BEC8;
+    --eduRowSpanRight-bg-color : #E1E3DF;
     --eduRowSpanRight-txt-color : #26201E;
 
-    --beloweduRowSpan-bg-color : #B9BEC8;
+    --beloweduRowSpan-bg-color : #E1E3DF;
     --beloweduRowSpan-txt-color : #26201E;
     /* end education */
 
     /* start capabilities */
-    --capRowTitle-bg-color : #B9BEC8;
+    --capRowTitle-bg-color : #E1E3DF;
     --capRowTitle-txt-color : #26201E;
 
-    --capRow-bg-color : #B9BEC8;
+    --capRow-bg-color : #E1E3DF;
     --capRow-txt-color : #26201E;
 
     --progressBar1-bg-color : #26201E;
-    --progressBar2-bg-color : #013F4D;
+    --progressBar2-bg-color : #83A12A;
+
+    --border : #183600;
     /* end capabilities */
 
     /* start portfolio */
-    --subTitle1-bg-color : #013F4D;
-    --subTitle2-bg-color : #013F4D;
-    --subTitle-txt-color : #B9BEC8;
+    --subTitle1-bg-color : #568930;
+    --subTitle2-bg-color : #568930;
+    --subTitle-txt-color : #E1E3DF;
     /* end portfolio */
 
     /* start pageBottom */   
-    --pageBottomTitle1-bg-color : #ABAFB7;
-    --pageBottomTitle2-bg-color : #ABAFB7;
+    --pageBottomTitle1-bg-color : #E1E3DF;
+    --pageBottomTitle2-bg-color : #E1E3DF;
     --pageBottomTitle-txt-color : #045975;
 
-    --bottomIconDiv-bg-color : #ABAFB7;
+    --bottomIconDiv-bg-color : #E1E3DF;
     /* end pageBottom */
 }
 a {
@@ -82,12 +89,12 @@ a {
     text-decoration: none;
 }
 .btn {
-    background: #ABAFB7;
-    background-image: -webkit-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: -moz-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: -ms-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: -o-linear-gradient(top, #ABAFB7, #5A7D9A);
-    background-image: linear-gradient(to bottom, #ABAFB7, #5A7D9A);
+    background: #E1E3DF;
+    background-image: -webkit-linear-gradient(top, #E1E3DF, #0B5F30);
+    background-image: -moz-linear-gradient(top, #E1E3DF, #0B5F30);
+    background-image: -ms-linear-gradient(top, #E1E3DF, #0B5F30);
+    background-image: -o-linear-gradient(top, #E1E3DF, #0B5F30);
+    background-image: linear-gradient(to bottom, #E1E3DF, #0B5F30);
     -webkit-border-radius: 15;
     -moz-border-radius: 15;
     border-radius: 15px;
@@ -99,12 +106,12 @@ a {
     text-decoration: none;
   }  
   .btn:hover {
-    background: #B9BEC8;
-    background-image: -webkit-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: -moz-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: -ms-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: -o-linear-gradient(top, #B9BEC8, #3498db);
-    background-image: linear-gradient(to bottom, #B9BEC8, #3498db);
+    background: #E1E3DF;
+    background-image: -webkit-linear-gradient(top, #E1E3DF, #3498db);
+    background-image: -moz-linear-gradient(top, #E1E3DF, #3498db);
+    background-image: -ms-linear-gradient(top, #E1E3DF, #3498db);
+    background-image: -o-linear-gradient(top, #E1E3DF, #3498db);
+    background-image: linear-gradient(to bottom, #E1E3DF, #3498db);
     text-decoration: none;
   }
 .links:link {
@@ -144,16 +151,16 @@ button{
 table {
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0;    
 }
 table th{
     color: white;
-    font-size: 20px;
+    font-size: 20px;    
 }
 table, tr,td{
     padding-right: 10;
     padding-left: 10;
-    margin: 0;
+    margin: 0;    
 }
 img{
     display: block;
@@ -164,20 +171,6 @@ img{
 img:hover {
     opacity: 0.7;
 }
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 7; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
 /* menu section */
 .menu-outer {
     padding: 4px;
@@ -241,6 +234,20 @@ ul#horizontal-list li {
 /* end menu section */
 
 /* Modal Content (Image) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 7; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
 .modal-content {
     margin: auto;
     display: block;
@@ -289,7 +296,9 @@ ul#horizontal-list li {
         width: 100%;
     }
 }
-/* content section */
+/* end modal */
+
+/* start content section */
 .title {
     font-size: 50px;
     text-align: center;
@@ -381,8 +390,8 @@ ul#horizontal-list li {
     opacity: 1;   
 }
 .text {
-    background-color: var(--subcontent-bg-color);
-    color: var(--subcontent-txt-color);
+    background-color: var(--pictureTitle-bg-color);
+    color: var(--pictureTitle-txt-color);
     font-size: 16px;
     padding: 5px 5px;
 }
@@ -454,26 +463,36 @@ ul#horizontal-list li {
 /* end education */
 
 /* start capabilities */ 
-;
+.capTable{
+    border-collapse: collapse;
+    border: 4px solid var(--border);  
+}
 .capContainer{
-    padding: 1%;
+    padding: 1%;  
 }
 .capRowTitle {
     background-color: var(--capRowTitle-bg-color);
     color: var(--capRowTitle-txt-color);
+    border: 2px solid var(--border);  
 }
 .capRow{
     background-color: var(--capRow-bg-color);
     color: var(--capRow-txt-color);
+    border: 2px solid var(--border);
 }
-.firstColumn{
+.firstColumn{    
+    padding: 3px;
     width: 25%;
+    border: 2px solid var(--border);  
 }
 .secondColumn{
+    padding: 3px;
     width: 25%;
+    border: 2px solid var(--border);  
 }
 .thirdColumn{
     width: 50%;
+    border: 2px solid var(--border);  
 }
 .progressBar{
     width: 100%;

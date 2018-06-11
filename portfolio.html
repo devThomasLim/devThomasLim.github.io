@@ -271,9 +271,12 @@
 			$(widget1).animate({left : '0px'}, 3000);
 			$(widget2).animate({right : '0px'}, 3000);
 		});
-
-		window.addEventListener('touchmove', checkPositionMobile);
-		window.addEventListener('scroll', checkPosition);
+		
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			window.addEventListener('touchmove', checkPositionMobile);
+		} else {
+			window.addEventListener('scroll', checkPosition);
+		}		
 			
 		function checkPositionMobile() {
 			var y = $(document).scrollTop();
