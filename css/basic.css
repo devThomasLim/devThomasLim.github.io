@@ -10,7 +10,7 @@
     --linkActive-txt-color: #3B770D;
 
     --menubody1-bg-color: #183600; /* Menu backgound Color */
-    --menubody2-bg-color: #568930; /* Menu backgound Color */
+    --menubody2-bg-color: #75B345; /* Menu backgound Color */
     --menubody-txt-color: #ececec; /* Menu text Color */
 
     --menuactive-bg-color: #75B345; /* Menu active Color */
@@ -142,8 +142,8 @@ button{
     font-size: 18px
 }
 .header {
-    padding: 18px;
-    background-color: black;
+    padding: 34px;
+    background-color: var(--body-bg-color);
 }
 .seperator {
     height: 20px;
@@ -173,13 +173,12 @@ img:hover {
 }
 /* menu section */
 .menu-outer {
-    padding: 4px;
     position: fixed;
     z-index: 5; /* Sit on top */
-    top: 0;    
+    top: 0;
     width: 100%;
     background: linear-gradient(to bottom right, var(--menubody1-bg-color), var(--menubody2-bg-color));
-    color: var(--menubody-txt-color);
+    color: var(--menubody-txt-color);    
 }
 .menubutton {
     display: inline-block;
@@ -189,7 +188,7 @@ img:hover {
     list-style: none;
     text-decoration: none;
     color: var(--menubody-txt-color);
-    padding: 3px 20px;
+    padding: 3px 20px 3px 20px;
     text-align: center;
 }
 .menubutton:hover a {
@@ -202,17 +201,16 @@ img:hover {
 }
 .domain {
     color: #ececec;
-    font-size: 25px;
+    font-size: 30px;
 }
 .table {
     display: table;   /* Allow the centering to work */
-    margin: 0 auto;   
-    padding: 0;
+    margin: 0 auto;
 }
 ul#horizontal-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 7px 7px 7px 7px;
+    padding: 2px 2px 2px 2px;      
 }
 ul#horizontal-list li {
     display: inline-block;    
@@ -220,16 +218,23 @@ ul#horizontal-list li {
 .leftmenu{
     display: inline-block;
     width: 75%;
-    margin: 0;
-    padding: 0;    
-    vertical-align:top;    
+    vertical-align:center;  
 }
 .rightmenu{
     display: inline-block;
     width: 25%;
-    margin: 0;
-    padding: 0;    
-    vertical-align:top;
+    vertical-align:center;
+}
+.logoBackground{
+}
+logoImgHolder{    
+    width: 100%;
+    height: 100%;    
+}
+.logoImg{
+    vertical-align: middle;
+    width: 40px;    
+    height: 40px;
 }
 /* end menu section */
 
@@ -362,12 +367,18 @@ ul#horizontal-list li {
     margin: 0 auto;
     width: 100%;
 }
-.container {
-    position: relative;    
+.biodataImgContainer{
+    vertical-align: top;
+}
+.container {   
+    position: relative;
+    width: 90%;
+    height: 90%;
 }
 .biodata {
     width: 100%;
     height: 100%;
+    padding: 5px 5px 5px 5px;
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;

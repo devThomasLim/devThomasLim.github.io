@@ -5,13 +5,13 @@
 	<meta content="utf-8" http-equiv="encoding">
 	<title> Curriculum Vitae</title>
 	<link rel="icon" href="favicon.ico">
-	<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="icons/favicon-48x48.png" sizes="48x48">
-	<link rel="icon" type="image/png" href="icons/favicon-62x62.png" sizes="62x62">
-	<link rel="icon" type="image/png" href="icons/favicon-128x128.png" sizes="128x128">
-	<link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196">
-	<link rel="icon" type="image/png" href="icons/favicon-310x310.png" sizes="310x310">
+	<link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="icon/favicon-48x48.png" sizes="48x48">
+	<link rel="icon" type="image/png" href="icon/favicon-62x62.png" sizes="62x62">
+	<link rel="icon" type="image/png" href="icon/favicon-128x128.png" sizes="128x128">
+	<link rel="icon" type="image/png" href="icon/favicon-196x196.png" sizes="196x196">
+	<link rel="icon" type="image/png" href="icon/favicon-310x310.png" sizes="310x310">
 	<link rel="stylesheet" type="text/css" href="css/basic.css">
 	<link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
     <script type="text/javascript" src="js/modal.js"></script>
@@ -39,11 +39,19 @@
 		</div>
 	</div><div class="rightmenu">
 		<div class="table">
-			<ul id="horizontal-list">						
-				<li>
-					<a class="domain">Sugianto</a>
-				</li>			
-			</ul>
+			<table>
+				<tr>
+					<td>
+						<div class="logoImgHolder">
+							<img class="logoImg" src="icon/favicon.png">
+						</div>	
+					</td>
+					<td style="width: 5px;"></td>
+					<td>
+						<a class="domain">Sugianto</a>
+					</td>	
+				</tr>
+			</table>
 		</div>
 	</div>
 </div>
@@ -63,7 +71,7 @@
 							<div class="tableContainer1">
 								<div class="tableContainer2">		
 									<table class="myTable">
-										<tr>
+										<tr class="biodataImgContainer" >
 											<td rowspan='100' width='35%' align="center">
 												<div class="container">				
 													<img class="biodata" id="myImage" onload="intervalImage()" alt="Sugianto, S.Kom." src="https://www.dropbox.com/s/xmnrkr7h2izoroq/IMG_0937.JPG?raw=1">
@@ -103,7 +111,7 @@
 												
 													// When the user clicks on <span> (x), close the modal
 													span.onclick = function() {
-													modal.style.display = "none";
+														modal.style.display = "none";
 													} 
 												</script>
 											</td>										
@@ -241,7 +249,7 @@
 											<td colspan="3"> <h1> COMPUTER  </h1> </td>						
 										</tr>
 										<tr class="capRow">
-											<td class="firstColumn" rowspan="4"> WEB DEVELOPMENT </td>
+											<td class="firstColumn" rowspan="5"> WEB DEVELOPMENT </td>
 											<td class="secondtColumn"> Python + Django </td>
 											<td class="thirdColumn">
 												<div class="progressBar">
@@ -259,6 +267,15 @@
 												</div>
 											</td>
 										</tr>
+										<tr class="capRow">	
+												<td class="secondColumn"> JavaScript/jQuery </td>
+												<td class="thirdColumn">
+													<div class="progressBar">
+														<div class="progress" style="width: 65%;">
+														</div>
+													</div>
+												</td>
+											</tr>
 										<tr class="capRow">
 											<td class="secondColumn"> Netbean + Java </td>
 											<td class="thirdColumn">
@@ -267,7 +284,7 @@
 													</div>
 												</div>
 											</td>
-										</tr>
+										</tr>										
 										<tr class="capRow">	
 											<td class="secondColumn"> PHP + Laravel </td>
 											<td class="thirdColumn">
