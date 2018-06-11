@@ -99,7 +99,7 @@ a {
     -moz-border-radius: 15;
     border-radius: 15px;
     text-shadow: 2px 2px 2px #000000;
-    font-family: 'Frank Ruhl Libre';
+    font-family: 'Frank Ruhl Libre', "Trebuchet MS", Helvetica, sans-serif;
     color: #ffffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -134,7 +134,7 @@ body {
     background-color: var(--body-bg-color);
     margin: 0;
     padding: 0;
-    font-family: 'Frank Ruhl Libre';
+    font-family: 'Frank Ruhl Libre', "Trebuchet MS", Helvetica, sans-serif;
 }
 button{
     background-color: var(--body-bg-color);
