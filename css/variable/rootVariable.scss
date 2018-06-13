@@ -1,0 +1,104 @@
+
+$grey: #B8BCBA;
+$greyishWhite: #d6d6d6;
+$softerWhite: #ececec;
+$white : #E1E3DF;
+$black : #000000;
+
+$menubody-radius : 500px;
+
+// start menu 
+$menubody1-bg-color: $color-primary-4; /* Menu backgound Color */
+$menubody2-bg-color: $color-primary-1; /* Menu backgound Color */
+$menubody-txt-color: $softerWhite; /* Menu text Color */
+
+$menuActive-bg-color: lighten($menubody1-bg-color, 5); /* Menu active Color */
+$menuActive-txt-color: $white; /* Menu active Color */
+
+$menuHover-bg-color: $grey; /* Menu hover Color */
+$menuHover-txt-color: $black; /* Menu hover text Color */  
+
+$domain-txt-color: $menubody-txt-color;
+// end menu 
+
+$button-bg-color1 : $white;
+$button-bg-color2 : $color-primary-4;
+$buttonHover-bg-color1 : $white;
+$buttonHover-bg-color2 : $color-secondary-1-1;
+
+$linkNormal-bg-color: $softerWhite;
+$linkNormal-txt-color: $color-primary-2;
+$linkVisited-bg-color: $linkNormal-bg-color;
+$linkVisited-txt-color: darken($linkNormal-txt-color, 20);
+$linkHover-bg-color: $linkNormal-txt-color;
+$linkHover-txt-color: $linkNormal-bg-color;
+$linkActive-bg-color: $linkNormal-txt-color;
+$linkActive-txt-color: $linkNormal-bg-color;
+
+$body-bg-color: $greyishWhite;
+$body-txt-color:$black;
+
+$title1-bg-color : $color-secondary-2-4;
+$title2-bg-color : $color-secondary-2-3;
+$title-txt-color : $greyishWhite;
+
+$content-bg-color : $greyishWhite;
+$content-txt-color : $black;
+
+$subcontent-bg-color : $grey;
+$subcontent-txt-color : $black;
+
+// start modal 
+$pictureTitle-bg-color: $color-secondary-2-1;
+$pictureTitle-txt-color: $black;
+// end modal
+
+// start biodata 
+$evenRow-bg-color : $softerWhite;
+$evenRow-txt-color : $black;
+
+$oddRow-bg-color : $white;
+$oddRow-txt-color : $black;
+// end biodata 
+
+// start education 
+$eduRowSpanLeft-bg-color : $white;
+$eduRowSpanLeft-txt-color : $black;
+
+$eduRowSpanRight-bg-color : $white;
+$eduRowSpanRight-txt-color : $black;
+
+$beloweduRowSpan-bg-color : $white;
+$beloweduRowSpan-txt-color : $black;
+// end education 
+
+// start capabilities 
+$capRowTitle-bg-color : $white;
+$capRowTitle-txt-color : $black;
+
+$capRow-bg-color : $white;
+$capRow-txt-color : $black;
+
+$progressBar1-bg-color : $black;
+$progressBar2-bg-color : $color-secondary-2-1;
+
+$border : $color-primary-4;
+// end capabilities 
+
+// start portfolio 
+$subTitle1-bg-color : lighten($title1-bg-color, 10);
+$subTitle2-bg-color : lighten($title2-bg-color, 10);
+$subTitle-txt-color : $title-txt-color;
+// end portfolio 
+
+// start pageBottom 
+$pageBottomTitle1-bg-color : $body-bg-color;
+$pageBottomTitle2-bg-color : $body-bg-color;
+$pageBottomTitle-txt-color : $rgba-secondary-1-2;
+
+$bottomIconDiv-bg-color : $body-bg-color;
+// end pagebotoom
+
+
+
+
