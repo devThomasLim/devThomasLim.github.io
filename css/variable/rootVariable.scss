@@ -9,7 +9,7 @@ $menubody-radius : 500px;
 
 // start menu 
 $menubody1-bg-color: $color-primary-4; /* Menu backgound Color */
-$menubody2-bg-color: $color-primary-1; /* Menu backgound Color */
+$menubody2-bg-color: $color-primary-2; /* Menu backgound Color */
 $menubody-txt-color: $softerWhite; /* Menu text Color */
 
 $menuActive-bg-color: lighten($menubody1-bg-color, 5); /* Menu active Color */
@@ -38,9 +38,9 @@ $linkActive-txt-color: $linkNormal-bg-color;
 $body-bg-color: $greyishWhite;
 $body-txt-color:$black;
 
-$title1-bg-color : $color-secondary-2-4;
-$title2-bg-color : $color-secondary-2-3;
-$title-txt-color : $greyishWhite;
+$title1-bg-color : $color-primary-2;
+$title2-bg-color : $color-primary-2;
+$title-txt-color : black;
 
 $content-bg-color : $greyishWhite;
 $content-txt-color : $black;
