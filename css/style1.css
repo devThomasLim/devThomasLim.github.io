@@ -579,7 +579,17 @@ img:hover {
   right: 0px; }
 
 /* test */
-/* start academic */
+/* start otherskill */
+.otherSkillToggle {
+  background: linear-gradient(to bottom right, #82adde, #82adde); }
+
+.skillSwitchButton {
+  margin: 2% 2% 2% 2%;
+  width: 46%;
+  display: inline-block;
+  font-size: 15px;
+  background-color: #387BC6; }
+
 .pictureContainer {
   width: 100%; }
   .pictureContainer .picture {
@@ -598,6 +608,6 @@ img:hover {
     .pictureContainer .picture:hover .bottomCaption {
       opacity: 1; }
 
-/* end academic */
+/* end otherskill */
 
 /*# sourceMappingURL=style1.css.map */

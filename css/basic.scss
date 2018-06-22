@@ -582,7 +582,20 @@ img:hover {
 /* test */
 
 
-/* start academic */
+/* start otherskill */
+.otherSkillToggle{
+    background: linear-gradient(to bottom right, $subTitle1-bg-color, $subTitle2-bg-color);
+    
+}
+.skillSwitchButton{
+    $skillMargin: 2%;
+    $skillButton: 2;
+    margin: $skillMargin $skillMargin $skillMargin $skillMargin;
+    width: ((100% - ($skillMargin*2 * $skillButton)) / $skillButton) ;
+    display: inline-block;
+    font-size: 15px;
+    background-color: #387BC6;
+}
 .pictureContainer{
     width: 100%;
 
@@ -612,4 +625,4 @@ img:hover {
     }
 }
 
-/* end academic */
+/* end otherskill */

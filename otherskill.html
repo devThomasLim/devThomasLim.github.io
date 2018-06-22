@@ -57,10 +57,14 @@
 	</div>
 	<div class="contentholder" id="contentHolder">
 		<div id="homeMainContent">
-			<div class="subTitle">
-				Adobe Illustrator
+			<div class="otherSkillToggle">
+				<button class="skillSwitchButton" id="illustratorButton" onmouseover="hoverButton(illustratorButton)" onmouseout="">
+					Adobe Illustrator
+				</button><button class="skillSwitchButton"  id="photoshopButton" onmouseover="hoverButton(photoshopButton)" onmouseout="">
+					Adobe Photoshop
+				</button>
 			</div>
-            <div class="pictureContainer">                
+            <div class="pictureContainer" id="pictureContainer">                
 				<script>
 					function portfolioPhoto(list, identifier) {
 						var links = list;
@@ -89,20 +93,20 @@
 					}
 
 					var otherSkill = [];
+					otherSkill.push('https://www.dropbox.com/s/opkgp92762txsws/010_Sugianto%20Logo.png?dl=0');
+					otherSkill.push('https://www.dropbox.com/s/woqjdekvbrrve4g/011_UgiantSO%20Green%20Logo.png?dl=0');
+					otherSkill.push('https://www.dropbox.com/s/9niteiyib25oo8k/012_UgiantSO%20python%20Logo2.png?dl=0');
 					otherSkill.push('https://www.dropbox.com/s/bv34x8m1disng5q/001_adidas.png?dl=0');
 					otherSkill.push('https://www.dropbox.com/s/kz63mcw6w8ob9ko/002_Apple.png?dl=0');
 					otherSkill.push('https://www.dropbox.com/s/mrd1vdsxi9d7cas/003_captain%20america.png?dl=0');
 					otherSkill.push('https://www.dropbox.com/s/wx1c502yj1dhdbd/004_dr%20dre.png?dl=0');
-					otherSkill.push('https://www.dropbox.com/s/8uu9vwqmiue64b1/005_First%20Me%20project%20-%20UHD.png?dl=0');
+					otherSkill.push('https://www.dropbox.com/s/lff6l4r618h5t4w/005_First%20Me%20project.png?dl=0');
 					otherSkill.push('https://www.dropbox.com/s/hj3o62kerezqb0m/006_flower.png?dl=0');
 					otherSkill.push('https://www.dropbox.com/s/q6ehmyj3hgqn1fu/007_Hat.png?dl=0');
 					otherSkill.push('https://www.dropbox.com/s/77x40m6au771pjs/008_NIKE.png?dl=0');
-					otherSkill.push('https://www.dropbox.com/s/nipivr4xwc6ytt8/009_southpark%20Sugianto.png?dl=0');
-					otherSkill.push('https://www.dropbox.com/s/opkgp92762txsws/010_Sugianto%20Logo.png?dl=0');
-					otherSkill.push('https://www.dropbox.com/s/woqjdekvbrrve4g/011_UgiantSO%20Green%20Logo.png?dl=0');
-					otherSkill.push('https://www.dropbox.com/s/9niteiyib25oo8k/012_UgiantSO%20python%20Logo2.png?dl=0');
+					otherSkill.push('https://www.dropbox.com/s/nipivr4xwc6ytt8/009_southpark%20Sugianto.png?dl=0');					
 					otherSkill.push('https://www.dropbox.com/s/ueunankl0a5204u/013_Vase.png?dl=0');
-					otherSkill.push('https://www.dropbox.com/s/c9vgodrivquykwr/014_Shoe.png?dl=0');					
+					otherSkill.push('https://www.dropbox.com/s/c9vgodrivquykwr/014_Shoe.png?dl=0');
 					// otherSkill.push('');
 
 					portfolioPhoto(otherSkill, 'skill');							
@@ -122,7 +126,59 @@
 					<div id="caption"></div>
 				</div>											
 				
-            </div>
+			</div>
+			<div class="pictureContainer" id="pictureContainer2">                
+				<script>
+					function portfolioPhoto(list, identifier) {
+						var links = list;
+						var linksLen = list.length;
+						var identifier = identifier;
+						var i;
+						for (i = 0; i < linksLen; i++) {
+							var link = '';                                                           
+							if (links[i].includes("dl=0") == true) {
+								link = links[i].replace("dl=0", "raw=1");
+								fileName = takeName(link);
+								document.write('<div class="picture" id="imgDiv'+identifier+i+'"><img class="skillImg" id="skillImg'+identifier+i+'" onLoad="showModal(this.id)" alt="'+fileName+'" src="'+link+'" > <div class="bottomCaption"><div class="text">'+fileName+'</div></div></div>');
+							} else {
+								fileName = takeName(links[i]);
+								document.write('<div class="picture" id="imgDiv'+identifier+i+'"><img class="skillImg" id="skillImg'+identifier+i+'" onLoad="showModal(this.id)" alt="'+fileName+'" src="'+links[i]+'" > <div class="bottomCaption"><div class="text">'+fileName+'</div></div></div>');
+							}
+						}                 
+					}
+		
+					function takeName (str) {
+						var name = '';
+						name = str.split('_')[1]; 
+						name = name.replace(/%20/g, ' ');
+						name = name.split('.')[0];
+						return name;
+					}
+
+					var otherSkill = [];
+					otherSkill.push('https://www.dropbox.com/s/hs4i4x2t2rswkyq/001_blue%20snow%202.png?dl=0');
+					otherSkill.push('https://www.dropbox.com/s/sx63dvdz9o72o4l/002_Naming%20Logo%20with%20color.png?dl=0');
+										
+					// otherSkill.push('');
+
+					portfolioPhoto(otherSkill, 'photoshop');							
+				
+				</script>					
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+					<!-- The Close Button -->
+					<span class="close">&times;</span>
+
+					<!-- Modal Content (The Image) -->
+					<img class="modal-content" id="img01">
+
+					<!-- Modal Caption (Image Text) -->
+					<div id="caption"></div>
+				</div>											
+				
+			</div>
 		</div>
 	</div>	
     
@@ -171,7 +227,32 @@
 		$(document).ready(function() {
 			$(contentHolder).css("display", "none");
 			$(contentHolder).slideDown(1500);
+			$('#pictureContainer2').hide();
+			$('#illustratorButton').css('background-color', '#0A4990'); // make button active on start up
 		});
+		
+		function hoverButton(id) {
+			$(id).hover(function() {
+				$(id).css('opacity', '0.5');
+				$(id).animate({ 'font-size': '20px'});				
+			}, function() {
+				$(id).css('opacity', '1');
+				$(id).animate({ 'font-size': '15px'});
+			})
+		}
+		$('#photoshopButton').click(function() {
+			$('#pictureContainer').slideUp(2000);
+			$('#pictureContainer2').slideDown(2000);
+			$('#photoshopButton').css('background-color', '#0A4990'); // active
+			$('#illustratorButton').css('background-color', '#387BC6');
+		})
+		$('#illustratorButton').click(function() {
+			$('#pictureContainer').slideDown(2000);			
+			$('#pictureContainer2').slideUp(2000);
+			$('#photoshopButton').css('background-color', '#387BC6');
+			$('#illustratorButton').css('background-color', '#0A4990'); // active
+
+		})
 		
 	</script>
 </body>
