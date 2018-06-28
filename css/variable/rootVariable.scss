@@ -6,6 +6,8 @@ $white : #E1E3DF;
 $black : #000000;
 
 $menubody-radius : 500px;
+$break-small: 481px;
+$break-large: 767px;
 
 // start menu 
 $menubody1-bg-color: $color-primary-4; /* Menu backgound Color */
@@ -99,6 +101,8 @@ $pageBottomTitle-txt-color : $rgba-secondary-1-2;
 $bottomIconDiv-bg-color : $body-bg-color;
 // end pagebotoom
 
-
+// other skill
+$skillSwitchButton-bg-color : $color-primary-4;
+$skillSwitchButton-txt-color : $softerWhite;
 
 

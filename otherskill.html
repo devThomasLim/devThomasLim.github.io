@@ -29,6 +29,8 @@
 					<a href="portfolio.html"> Portfolio</a>
 				</li><li class="menubutton active">
 					<a href="otherskill.html"> Other Skill</a>
+				</li><li class="menubutton">
+					<a href="academic.html"> Academic</a>
 				</li>
 				
 			</ul>
@@ -113,18 +115,7 @@
 				
 				</script>					
 
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-
-					<!-- The Close Button -->
-					<span class="close">&times;</span>
-
-					<!-- Modal Content (The Image) -->
-					<img class="modal-content" id="img01">
-
-					<!-- Modal Caption (Image Text) -->
-					<div id="caption"></div>
-				</div>											
+											
 				
 			</div>
 			<div class="pictureContainer" id="pictureContainer2">                
@@ -165,24 +156,25 @@
 				
 				</script>					
 
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-
-					<!-- The Close Button -->
-					<span class="close">&times;</span>
-
-					<!-- Modal Content (The Image) -->
-					<img class="modal-content" id="img01">
-
-					<!-- Modal Caption (Image Text) -->
-					<div id="caption"></div>
-				</div>											
+														
 				
 			</div>
 		</div>
 	</div>	
     
-    
+    <!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- The Close Button -->
+		<span class="close">&times;</span>
+
+		<!-- Modal Content (The Image) -->
+		<img class="modal-content" id="img01">
+
+		<!-- Modal Caption (Image Text) -->
+		<div id="caption"></div>
+	</div>	
+	
 	<div class='pageBottom'>
 		<div class='pageBottomTitle'>
 			Contact Information
@@ -229,6 +221,7 @@
 			$(contentHolder).slideDown(1500);
 			$('#pictureContainer2').hide();
 			$('#illustratorButton').css('background-color', '#0A4990'); // make button active on start up
+			$('#photoshopButton').css('background-color', '#387BC6');
 		});
 		
 		function hoverButton(id) {
@@ -251,7 +244,6 @@
 			$('#pictureContainer2').slideUp(2000);
 			$('#photoshopButton').css('background-color', '#387BC6');
 			$('#illustratorButton').css('background-color', '#0A4990'); // active
-
 		})
 		
 	</script>

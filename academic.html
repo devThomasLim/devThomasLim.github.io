@@ -27,7 +27,7 @@
 					<a href="cv.html">CV</a>
 				</li><li class="menubutton">
 					<a href="portfolio.html"> Portfolio</a>
-				</li><li class="menubutton active">
+				</li><li class="menubutton">
 					<a href="otherskill.html"> Other Skill</a>
 				</li><li class="menubutton active">
 					<a href="academic.html"> Academic</a>
@@ -60,58 +60,7 @@
 	<div class="contentholder" id="contentHolder">
 		<div id="homeMainContent">
 			
-            <div class="pictureContainer" id="pictureContainer">                
-				<script>
-					function portfolioPhoto(list, identifier) {
-						var links = list;
-						var linksLen = list.length;
-						var identifier = identifier;
-						var i;
-						for (i = 0; i < linksLen; i++) {
-							var link = '';                                                           
-							if (links[i].includes("dl=0") == true) {
-								link = links[i].replace("dl=0", "raw=1");
-								fileName = takeName(link);
-								document.write('<div class="" style="width:90%; padding:20px;" align="center" id="imgDiv'+identifier+i+'"><img class="skillImg" id="skillImg'+identifier+i+'" onLoad="showModal(this.id)" alt="'+fileName+'" src="'+link+'" > <div class="bottomCaption"><div class="text">'+fileName+'</div></div></div>');
-							} else {
-								fileName = takeName(links[i]);
-								document.write('<div class="" style="width:90%; padding:20px;"" align="center" id="imgDiv'+identifier+i+'"><img class="skillImg" id="skillImg'+identifier+i+'" onLoad="showModal(this.id)" alt="'+fileName+'" src="'+links[i]+'" > <div class="bottomCaption"><div class="text">'+fileName+'</div></div></div>');
-							}
-						}                 
-					}
-		
-					function takeName (str) {
-						var name = '';
-						name = str.split('_')[1]; 
-						name = name.replace(/%20/g, ' ');
-						name = name.split('.')[0];
-						return name;
-					}
-
-					var academic = [];
-					academic.push('https://www.dropbox.com/s/90hd3ga8dsau5lf/001_New%20Doc%202018-02-26_4.jpg?dl=0');
-                    academic.push('https://www.dropbox.com/s/uykgebbehggzp3f/002_New%20Doc%202018-02-26_6.jpg?dl=0');
-					// academic.push('');
-
-					portfolioPhoto(academic, 'skill');							
-				
-				</script>					
-
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-
-					<!-- The Close Button -->
-					<span class="close">&times;</span>
-
-					<!-- Modal Content (The Image) -->
-					<img class="modal-content" id="img01">
-
-					<!-- Modal Caption (Image Text) -->
-					<div id="caption"></div>
-				</div>											
-				
-			</div>
-			<div class="pictureContainer" id="pictureContainer2">                
+            <div class="academicContainer" id="academicContainer">               
 				<script>
 					function portfolioPhoto(list, identifier) {
 						var links = list;
@@ -140,12 +89,15 @@
 					}
 
 					var academic = [];
-					academic.push('https://www.dropbox.com/s/hs4i4x2t2rswkyq/001_blue%20snow%202.png?dl=0');
-					academic.push('https://www.dropbox.com/s/sx63dvdz9o72o4l/002_Naming%20Logo%20with%20color.png?dl=0');
-										
+					academic.push('https://www.dropbox.com/s/1w3azv87p6pamxh/001_Diploma.png?dl=0');
+					academic.push('https://www.dropbox.com/s/o2lu8r7zcrarnkl/002_Academic%20Transcript.png?dl=0');
+					academic.push('https://www.dropbox.com/s/rqya77qzvl30hqm/003_TOEFL.png?dl=0');
+					academic.push('https://www.dropbox.com/s/mnv5bkaj1d6rr3u/004_English%20Seminar%20Certificate.jpg?dl=0');
+					academic.push('https://www.dropbox.com/s/4i8wy2l7x2dcqgq/005_GIMP%20Certificate.jpg?dl=0');
+					academic.push('https://www.dropbox.com/s/ubgsuqv2tgz6sc0/006_AutoCad%20Certificate.jpg?dl=0');					
 					// academic.push('');
 
-					portfolioPhoto(academic, 'photoshop');							
+					portfolioPhoto(academic, 'academic');							
 				
 				</script>					
 
@@ -160,8 +112,7 @@
 
 					<!-- Modal Caption (Image Text) -->
 					<div id="caption"></div>
-				</div>											
-				
+				</div>
 			</div>
 		</div>
 	</div>	
@@ -224,19 +175,6 @@
 				$(id).animate({ 'font-size': '15px'});
 			})
 		}
-		$('#photoshopButton').click(function() {
-			$('#pictureContainer').slideUp(2000);
-			$('#pictureContainer2').slideDown(2000);
-			$('#photoshopButton').css('background-color', '#0A4990'); // active
-			$('#illustratorButton').css('background-color', '#387BC6');
-		})
-		$('#illustratorButton').click(function() {
-			$('#pictureContainer').slideDown(2000);			
-			$('#pictureContainer2').slideUp(2000);
-			$('#photoshopButton').css('background-color', '#387BC6');
-			$('#illustratorButton').css('background-color', '#0A4990'); // active
-
-		})
 		
 	</script>
 </body>
