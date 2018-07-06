@@ -662,3 +662,35 @@ img:hover {
     }
 }
 /* end academic */
+
+
+/* new layout */
+.screen1{
+    background-image: url("https://www.dropbox.com/s/nj3b2zcnpjwpsg3/homeBackground.png?raw=1");
+}
+.screen1Holder,
+.screen2Holder,
+.screen3Holder,
+.screen4Holder {    
+    padding: $topBottom $leftRight;
+}
+.screen1Logo{
+    width: 100%;
+    height: 100%;
+}
+.screen1LogoHolder{
+    display: inline-block;
+    width: 30%;
+}
+.domainHolder{
+    vertical-align: top;
+    display: inline-block;
+    width: 70% ;
+}
+.homeMenu{
+    height: 100px;
+}
+.contactContainer{
+    color: #f1f1f1;
+}
+/* new layout */
